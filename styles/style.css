@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    max-width: 1920px;
+    font-family: 'Gilroy-Bold';
+    font-size: 18px;
+    line-height: 22px;
+    color: #070707;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+li{
+  
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.header{
+    padding-top: 40px;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #828282;
+    color: #828282;
+    list-style: none;
+}
+.menu-link{
+    padding: 20px;
+}
+.menu-link:hover{
+    color: #070707;
+}
+.home-info{
+    display: flex;
+    justify-content: space-between;
+}
+.my-name{
+    font-size: 48px;
+    line-height: 59px;
+}
+.language-block{
+    transform: rotate(-90deg);
+    font-size: 14px;
+}
+.language, .language-divider{
+    display: inline-block;
+}
+.language:hover{
+    color: #070707;
+}
+.home{
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.home-wrapper{
+    display: flex;
+}
+.home-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.home-text{
+    margin-top: 50px;
+    font-size: 20px;
+}
+.home-img{
+    width: 50%;
+}
+.about-me{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: #F6F6F6;
+}
+.section-title{
+    font-size: 34px;
+    line-height: 42px;
+    text-align: start;
+    color: #070707;
+    margin-bottom: 30px;
+}
+.about-me-block{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+.about-me-title{
+    margin-bottom: 10px;
+}
+.about-me-list{
+    padding: 10px 20px;
+}
