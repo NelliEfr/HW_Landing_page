@@ -150,6 +150,7 @@ a{
     border: 1px solid black;
     cursor: pointer;
     position: absolute;
+    border-radius: 5%;
 }
 .prev{
     transform: rotate(-180deg);
@@ -162,4 +163,42 @@ a{
 }
 .prev, .next:hover{
     color: #070707;
+}
+.contacts{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.contacts-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contacts-form input{
+    border: none;
+    padding-top: 40px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #828282;
+    width: 90%;
+    outline: none;
+}
+.form-buttons{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: 25px 5% 0;
+}
+.form-send{
+    padding: 5px 30px;
+    border-radius: 5px;
+    
+    cursor: pointer;
+}
+.contacts-social{
+    display: flex;
+    justify-content: center;
+}
+.contacts-social p{
+    margin: 0 10px;
+    font-size: 24px;
 }
