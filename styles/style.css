@@ -101,3 +101,33 @@ li{
 .about-me-list{
     padding: 10px 20px;
 }
+.skills{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.tech-skills{
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.skills-block{
+    font-size: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+.skills-item{
+    text-align: center;
+}
+.skills-name{
+    font-size: 18px;
+}
+.rating-block{
+    font-size: 16px;
+}
+.portfolio{
+    background-color: #F6F6F6;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
