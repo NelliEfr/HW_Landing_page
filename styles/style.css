@@ -3,6 +3,15 @@
     margin: 0;
     padding: 0;
 }
+@font-face {
+	font-family: 'Gilroy-Bold';
+	src: url('../fonts/gilroy-bold.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/gilroy-bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/gilroy-bold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/gilroy-bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/gilroy-bold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/gilroy-bold.svg#gilroy-bold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
 body{
     max-width: 1920px;
     font-family: 'Gilroy-Bold';
@@ -21,6 +30,7 @@ a{
 }
 .header{
     padding-top: 40px;
+    position: relative;
 }
 .menu{
     display: flex;
@@ -36,6 +46,9 @@ a{
 }
 .menu-link:hover{
     color: #070707;
+}
+.menu-compact{
+    display: none;
 }
 .home-info{
     display: flex;
@@ -111,8 +124,9 @@ a{
 }
 .skills-block{
     font-size: 100px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
     padding: 0 30px;
 }
 .skills-item{
@@ -201,4 +215,76 @@ a{
 .contacts-social p{
     margin: 0 10px;
     font-size: 24px;
+}
+@media (max-width: 820px) {
+    .section-title{
+        margin-left: 20px;
+    }
+    .skills-block{
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 20px;
+    }
+}
+@media (max-width: 680px) {
+    .container{
+        width: 500px;
+    }
+   
+    .menu-compact{
+        display: block;
+        font-size: 40px;
+        position: absolute;
+        top: 20%;
+        right: 5%;
+    }
+    .menu-compact:hover ~.menu{
+        display: flex;
+    }
+    .menu{
+        display: none;
+        flex-direction: column;
+        align-items: end;
+        position: absolute;
+        right: 2%;
+        border: none;
+    }
+    .menu:hover{
+        display: flex;
+    }
+    .language-block{
+        transform: rotate(0);
+        padding: 20px;
+    }
+    .home-wrapper{
+        flex-direction: column;
+    }
+    .home-info{
+        width: 100%;
+    }
+    .home-text{
+        margin-top: 30px;
+    }
+    .home-img{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .about-me-block{
+        flex-direction: column;
+    }
+    .skills-block{
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 20px;
+    }
+    .skills-item{
+        width: 100%;
+    }
+}
+@media (max-width: 680px){
+    .container{
+        width: 400px;
+    }
+    .skills-block{
+        grid-template-columns: 1fr;
 }
