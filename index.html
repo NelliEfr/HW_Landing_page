@@ -149,7 +149,39 @@
     <section class="portfolio" id="portfolio">
         <div class="container">
             <h4 class="section-title">Portfolio</h4>
+            <div class="portfolio-slider">
+                <a class="portfolio-item" href="#">
+                    <p class="portfolio-name">1</p>
+                </a>
+                <a class="portfolio-item" href="#">
+                    <p class="portfolio-name">2</p>
+                </a>
+                <a class="portfolio-item" href="#">
+                    <p class="portfolio-name">3</p>
+                </a>
+                <div class="arrow-block">
+                    <button class="prev" onclick="changeIndex(-1)">
+                        <p class="fa-solid fa-chevron-right"></p>
+                    </button>
+                    <button class="next" onclick="changeIndex(1)">
+                        <p class="fa-solid fa-chevron-right"></p>
+                    </button>
+                </div>
+            </div>
         </div>
     </section>
+    <section class="contacts" id = "contacts">
+        <div class="container">
+            <h4 class="section-title">Contact me</h4>
+            <form action="#" class="contacts-form">
+                <input type="text" class="form-name" placeholder="Your name">
+                <input type="email" class="form-email" placeholder="Your email">
+                <textarea class="form-area" placeholder="Your message">
+                <button class="form-btn">Send</button>
+            </form>
+        </div>
+        
+    </section>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

@@ -14,9 +14,7 @@ a{
     text-decoration: none;
     color: inherit;
 }
-li{
-  
-}
+
 .container{
     max-width: 1100px;
     margin: 0 auto;
@@ -130,4 +128,38 @@ li{
     background-color: #F6F6F6;
     padding-top: 40px;
     padding-bottom: 40px;
+}
+.portfolio-item{
+    width: 600px;
+    height: 600px;
+    border: 1px solid black;
+    text-align: center;
+}
+.portfolio-slider{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.arrow-block{
+    display: flex;
+    align-items: center;
+}
+.prev, .next{
+    padding: 20px;
+    display: inline-block;
+    border: 1px solid black;
+    cursor: pointer;
+    position: absolute;
+}
+.prev{
+    transform: rotate(-180deg);
+    top: 50%;
+    left: 0;
+}
+.next{
+    top: 50%;
+    right: 0;
+}
+.prev, .next:hover{
+    color: #070707;
 }
