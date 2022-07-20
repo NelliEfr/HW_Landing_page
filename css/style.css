@@ -19,6 +19,7 @@ a {
     text-decoration: none;
     color: white;
     padding: 30px;
+    margin: 0 ;
     display: block;
 
 }
@@ -35,3 +36,35 @@ nav ul {
     display: flex;
     
 } 
+
+.form {
+    color: white;
+    width: 400px;
+    padding: 20px 0; 
+    margin: 80px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+
+    position: relative; 
+}
+
+.form_text {
+    margin: 10px 0;
+    color:#837ff8 ;
+    font-size: 25px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.form_btn {
+    width: 200px ;
+    margin: 40px 0;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    border: 1px solid white;
+    border-radius: 55px;
+    
+}
