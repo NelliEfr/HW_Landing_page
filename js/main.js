@@ -1,5 +1,5 @@
-var slider = document.getElementsByClassName("portfolio-item");
-var currentIndex = 1;
+const slider = document.getElementsByClassName("portfolio-item");
+let currentIndex = 1;
 displaySlide(currentIndex);
 
 function changeIndex(index){
@@ -12,7 +12,7 @@ function displaySlide(index){
     if (index>slider.length){
         currentIndex = 1;
     }
-   for (var i = 0; i < slider.length; i++){
+   for (let i = 0; i < slider.length; i++){
     slider[i].style.display = "none";
    }
    slider[currentIndex-1].style.display = "block";
