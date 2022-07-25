@@ -1,7 +1,7 @@
 * { 
     padding: 0;
     margin: 0;
-    background-color:#02011e;
+    background-color: #02011e; 
 }
 
 .text {
@@ -12,7 +12,7 @@
 .text1 {
     font-size: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color:#73737c;  
+    color: #73737c;  
 }
 
 a {
@@ -34,21 +34,25 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    
 } 
 
 .form {
     color: white;
     width: 400px;
     padding: 20px 0; 
-    margin: 80px;
+    margin-top: 150px;
+    margin-left: 80px;
 
     display: flex;
     flex-direction: column;
     justify-content: left;
     align-items: left;
 
-    position: relative; 
+    position: absolute; 
+}
+
+.form_title {
+    font-size: 30px;
 }
 
 .form_text {
@@ -67,4 +71,89 @@ nav ul {
     border: 1px solid white;
     border-radius: 55px;
     
+}
+
+.grid_container {
+    display: grid; 
+    margin-top: 20px; 
+    margin-left: 650px;
+    color: white;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 15px;
+    position: absolute;
+    
+    
+}
+
+.grid_item {
+   border: 1px solid white;
+   text-align: center;
+}
+
+.item_1 {
+    margin-top: 40px;
+    margin-left: 50px; 
+    width: 400px;
+    height: 300px;
+    position: absolute;
+
+}
+
+.item_2 {
+    width: 100%;
+    height: 100px;
+    bottom: 0; 
+    position: absolute;
+
+}
+
+.item_3 {
+    width: 100px;
+    height: 200px;
+    position: absolute;
+
+}
+
+.item_4 {
+    width: 100%;
+    height: 80px;
+    bottom: 0;
+    position: absolute;
+
+}
+
+.item_5 {
+    margin-top: 140px;
+    width: 150px;
+    height: 320px;
+    margin-left: 360px;
+    position: absolute;
+
+}
+
+.item_6 {
+    margin-left: 25px;
+    bottom: 20px;
+
+    width: 100%;
+    position: absolute;
+
+}
+
+.item_7 {
+    position: absolute;
+    width: 350px;
+    height: 100px;
+    margin-top: 350px;
+
+}
+
+.item_8 {
+    margin-left: 20px;
+    top: 10px;
+    bottom: 20px;
+    width: 100px;
+    height: 75px;
+    position: absolute;
+
 }
