@@ -75,78 +75,178 @@ nav ul {
 
 .grid_container {
     display: grid; 
-    margin-top: 20px; 
-    margin-left: 650px;
     color: white;
     grid-template-columns: repeat(3, 1fr);
-    border-radius: 15px;
     position: absolute;
-    
+    top: 120px; 
+    left: 650px;
     
 }
 
 .grid_item {
-   border: 1px solid white;
-   text-align: center;
+    /* border: 1px solid white;  */
+    text-align: center;
+    border-radius: 5px;
 }
 
 .item_1 {
     margin-top: 40px;
-    margin-left: 50px; 
-    width: 400px;
+    margin-left: 40px; 
+    width: 500px;
     height: 300px;
     position: absolute;
 
 }
 
+.item_1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .item_2 {
     width: 100%;
     height: 100px;
-    bottom: 0; 
+    background-color: rgba(0, 0, 0, 0.6);
     position: absolute;
+    bottom: 0;
+    
+    
+}
+
+.item_2_1 {
+    padding: 5px 5px 0 20px;
+    font-family: 'Ibarra Real Nova', serif;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: left;
+    background-color: transparent;
 
 }
+
+.item_2_2 {
+    padding: 0 0 0 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 25px;
+    text-align: left;
+    background-color: transparent;
+
+}
+
+.item_2_3 {
+    padding: 5px 5px 0 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-family: 'Ibarra Real Nova', serif;
+    text-align: left;
+    background-color: transparent;
+
+}
+
+
+
 
 .item_3 {
     width: 100px;
     height: 200px;
     position: absolute;
-
+    box-shadow: 25px 25px 35px black;
 }
 
 .item_4 {
-    width: 100%;
-    height: 80px;
-    bottom: 0;
+    width: 80px;
+    height: 90px;
     position: absolute;
-
+    bottom: 0;
+    left: 10px;
 }
 
 .item_5 {
-    margin-top: 140px;
-    width: 150px;
-    height: 320px;
-    margin-left: 360px;
+    width: 200px;
+    height: 430px;
     position: absolute;
+    top: 100px;
+    left: 450px;
+    background-color: rgb(198, 202, 246);
+}
+
+.item_5 img {
+    margin: 20px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 75px;
+    background-color:  rgb(198, 202, 246);
+}
+
+
+
+.item_5_1 {
+    top: 50px;
+    background-color: rgb(198, 202, 246);
+    color: black;
+    
+}
+
+.item_5_2 {
+    padding: 5px;
+    background-color: rgb(198, 202, 246);
+    color:#837ff8;
+    font-weight: bold;
 
 }
 
+.item_5_3 {
+    width: 180px;
+    margin-left: 15px;
+    background-color: rgb(198, 202, 246);
+    color: black;
+    
+}
+
+
 .item_6 {
-    margin-left: 25px;
-    bottom: 20px;
-
-    width: 100%;
+    padding: 3px;
+    width: 200px;
+    background-color: #837ff8 ;
     position: absolute;
-
+    left: 25px;
+    bottom: 20px;
+    font-family: 'Ibarra Real Nova', serif;
+    
 }
 
 .item_7 {
     position: absolute;
-    width: 350px;
+    top: 350px;
+    width: 430px;
     height: 100px;
-    margin-top: 350px;
+    background-color: white;
+    color: black;
 
 }
+
+.item_7_1{
+    margin-left: 99px;
+    padding: 5px;
+    background-color: white;
+    width: 150px;
+    color:#837ff8;
+    font-weight: bold;
+}
+
+.item_7_2 {
+    margin-left: 70px;
+    background-color: white;
+    font-size: 20px;
+}
+
+.item_7_3 {
+    margin-left: 138px;
+    padding: 5px;
+    background-color: white;
+    text-align: left;
+}
+
+
 
 .item_8 {
     margin-left: 20px;
@@ -156,4 +256,13 @@ nav ul {
     height: 75px;
     position: absolute;
 
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 50%; 
+    color: #837ff8;
+    height: auto;
+    font-size: 25px;
 }
