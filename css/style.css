@@ -1,22 +1,25 @@
 * {
     margin: 0;
     padding: 0;
-    /* background-color: rgb(149, 218, 149); */
-} 
+    box-sizing: border-box;
+}
+
 body {
     background-color: rgb(192, 232, 192);
 }
 
-i {
-    
-
+nav i {
     position: absolute;
     top: auto;
     left: 20px;
+    font-size: 30px;
+    
 }
 
 .logo_nav {
-    font-family: Syncopate;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    padding-left: 20px;
 }
 a {
     text-decoration: none;
@@ -30,10 +33,13 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
     background-color: rgb(7, 215, 7);
-    padding: 10px 40px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    padding: 3px 40px;
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    
     position: relative;
 }
 
@@ -41,10 +47,17 @@ nav {
  nav ul {
     display: flex;
     list-style: none;
+    border-bottom: 1px solid transparent;
  }
 
  nav ul :hover {
+    color: yellow;
+    border-bottom: 1px solid yellow;
     
+ }
+ .login {
+    font-weight: bold;
+   
  }
 
  .nav_button {
@@ -63,13 +76,14 @@ nav {
     display: none;
  }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 720px) {
     nav {
         position: relative;
     }
     
     .nav_button {
         display: flex;
+        
     }
     nav ul {
         flex-direction: column;
@@ -91,6 +105,11 @@ nav {
         justify-content: center;
     }
   } 
+
+    .ananas_img {
+        width: 100%;
+        height: 50%
+  }
 
 
 
