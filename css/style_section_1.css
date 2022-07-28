@@ -1,0 +1,130 @@
+/* MAIN-BLOCK */
+
+
+/* Section 1 */
+
+
+.card_1 {
+
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.fruits_img {
+
+    width: 100%;
+    position: absolute;
+}
+
+.block1_info_1 {
+
+    position: absolute; 
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    background:rgba(255, 255, 255, 0.5);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    padding: 20px;
+    
+    border-radius: 50px;
+    width: 90%;
+    
+    vertical-align: middle;
+    text-align: center;
+  } 
+
+  .block1_info_2 {
+
+    position: absolute; 
+    top: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    background:rgba(255, 255, 255, 0.4);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    padding: 20px;
+    
+    border-radius: 40px;
+    width: 75%;
+
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  .btn_card_1 {
+
+    position: absolute; 
+    top: 500px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+
+    padding: 10px 50px;
+    border: 2px solid transparent;
+    background-color: rgb(7, 215, 7);
+    border-radius: 30px;
+    cursor: pointer;
+
+}
+
+.btn_card_1:hover {
+
+background-color: yellow;
+border: 2px solid yellow;
+}
+
+
+@media screen and (max-width: 700px) {
+    
+    .card_1 {
+
+        height: 100%;
+        width: 600px;
+    }
+
+    .block1_info_1 {
+
+        position: absolute; 
+        top: 100px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
+        font-size: 20px;
+        padding: 20px;
+        border-radius: 25px;    
+    }
+
+    .block1_info_2 {
+
+        position: absolute; 
+        top: 210px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+        font-size: 15px;
+        padding: 15px;
+        border-radius: 30px;
+    }
+
+    section .btn_card_1 {
+
+        position: absolute;
+        top: 295px;
+
+        font-size: 14px;
+    
+        padding: 6px 40px;
+        border: 2px solid transparent;
+        background-color: rgb(7, 215, 7);
+        border-radius: 15px;
+    } 
+}
+
+    
+

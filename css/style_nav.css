@@ -1,35 +1,46 @@
+@import url('/css/style_section_1.css');
+
 * {
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
+
     background-color: rgb(192, 232, 192);
 }
 
+
+/* Navigation */
+
+
 nav i {
+
     position: absolute;
     top: auto;
     left: 20px;
-    font-size: 30px;
-    
+    font-size: 30px; 
 }
 
 .logo_nav {
+
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 25px;
     padding-left: 20px;
 }
+
 a {
+
     text-decoration: none;
     color: black;
     padding: 10px;
     display: block;
-
 }
 
 nav {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,24 +54,21 @@ nav {
     position: relative;
 }
 
+nav ul {
 
- nav ul {
     display: flex;
     list-style: none;
     border-bottom: 1px solid transparent;
- }
+}
 
- nav ul :hover {
+nav ul :hover {
+
     color: yellow;
-    border-bottom: 1px solid yellow;
-    
- }
- .login {
-    font-weight: bold;
-   
- }
+    border-bottom: 1px solid yellow;  
+}
 
- .nav_button {
+.nav_button {
+
     width: 25px;
     height: 25px;
     font-size: 25px;
@@ -74,18 +82,25 @@ nav {
     justify-content: center;
 
     display: none;
- }
+}
 
-  @media screen and (max-width: 720px) {
+
+
+
+@media screen and (max-width: 700px) {
+    
     nav {
+
         position: relative;
     }
     
     .nav_button {
-        display: flex;
-        
+
+        display: flex; 
     }
+
     nav ul {
+
         flex-direction: column;
         position: absolute;
         top: 100%;
@@ -93,12 +108,11 @@ nav {
 
         background-color: rgb(7, 215, 7);
         width: 100px;
-
-       
     }
 
     nav ul a {
-        padding: 20px 10px;
+
+        padding: 27.5px 10px;
         border-bottom: 2px solid  black; 
         display: flex;
         text-align: center;
@@ -106,15 +120,58 @@ nav {
     }
   } 
 
-    .ananas_img {
-        width: 100%;
-        height: 50%
-  }
+@media screen and (max-width: 500px) {
 
+    nav {
 
+        position: relative;
+    }
+    
+    .nav_button {
 
+        display: flex; 
+        width: 20px;
+        height: 20px;
+        font-size: 20px;
+    }
 
+    nav ul {
 
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
 
+        background-color: rgb(7, 215, 7);
+        width: 100px;
+    }
+
+    nav ul a {
+
+        padding: 14px 8px;
+        border-bottom: 2px solid  black; 
+        display: flex;
+        text-align: center;
+        justify-content: center;
+
+        font-size: 18px;
+    }
+
+    nav i {
+
+        position: absolute;
+        top: auto;
+        left: 20px;
+        font-size: 25px; 
+    }
+    
+    .logo_nav {
+    
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 22px;
+        padding-left: 20px;
+    }
+
+}
 
 
