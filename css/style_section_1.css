@@ -3,22 +3,24 @@
 
 /* Section 1 */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 .card_1 {
-
     width: 100%;
     height: 100%;
     position: relative;
 }
 
 .fruits_img {
-
     width: 100%;
     position: absolute;
 }
 
 .block1_info_1 {
-
     position: absolute; 
     top: 200px;
     left: 50%;
@@ -27,6 +29,8 @@
     background:rgba(255, 255, 255, 0.5);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 40px;
+    text-shadow:  3px 3px rgb(131, 126, 126);
+
     padding: 20px;
     
     border-radius: 50px;
@@ -37,7 +41,6 @@
   } 
 
   .block1_info_2 {
-
     position: absolute; 
     top: 350px;
     left: 50%;
@@ -56,7 +59,6 @@
   }
 
   .btn_card_1 {
-
     position: absolute; 
     top: 500px;
     left: 50%;
@@ -70,26 +72,22 @@
     background-color: rgb(7, 215, 7);
     border-radius: 30px;
     cursor: pointer;
-
 }
 
 .btn_card_1:hover {
-
-background-color: yellow;
-border: 2px solid yellow;
+    background-color: yellow;
+    border: 2px solid yellow;
 }
 
 
 @media screen and (max-width: 700px) {
     
     .card_1 {
-
         height: 100%;
-        width: 600px;
+        width: 583px;
     }
 
     .block1_info_1 {
-
         position: absolute; 
         top: 100px;
         left: 50%;
@@ -101,7 +99,6 @@ border: 2px solid yellow;
     }
 
     .block1_info_2 {
-
         position: absolute; 
         top: 210px;
         left: 50%;
@@ -113,7 +110,6 @@ border: 2px solid yellow;
     }
 
     section .btn_card_1 {
-
         position: absolute;
         top: 295px;
 

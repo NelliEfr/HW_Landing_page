@@ -1,0 +1,167 @@
+/* Main-Block*/
+
+/* Section 2 */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body{
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ .card_2 {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 690px;
+    
+    display: flex;
+    justify-content: space-around;
+} 
+
+.name_section_2 {
+    position: absolute;
+    top: 750px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    
+    font-size: 33px;
+    color: rgb(17, 107, 17);
+    text-shadow:  3px 3px rgb(152, 151, 151);
+}
+
+.fruit_box {
+    border: 2px solid transparent;
+    width: 300px;
+    height: 520px;
+    margin: 150px 25px 25px 25px;
+    background-color: white;
+    border-radius: 35px;
+
+    position: relative;
+ }
+
+ .box_img {
+    width: 300px;
+    height: auto;
+    padding: 30px 30px 0 30px;
+    border-radius: 50px;
+ }
+
+ .box_content {
+    padding: 10px 20px 20px 20px;
+
+    vertical-align: middle;
+    text-align: center; 
+ }
+
+ .box_name {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;    
+ }
+
+ .price {
+    padding-top: 15px;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(223, 0, 0);
+
+    position: absolute;
+    top: 10px;
+ }
+
+ .buy_btn {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translate(35%, -50%);
+    
+
+    border: 1 solid transparent;
+    border-radius: 25px;
+    background-color: rgb(7, 215, 7);
+    padding: 10px 50px;
+    cursor: pointer;
+ }
+
+ .buy_btn:hover {
+    background-color: yellow;
+    border: 1px solid yellow;
+ }
+
+
+
+ @media screen and (max-width: 700px) {
+    
+    .name_section_2 {
+        position: absolute;
+        top: 470px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        font-size: 21px;
+    }
+
+    .card_2 {
+        flex-direction: column;
+        position: absolute;
+        top: 1280px;
+        left: 50%;
+        transform: translate(-25%, -50%);
+    }
+
+    .fruit_box {
+        border: 2px solid black;
+        width: 300px;
+        height: 300px;
+        position: relative;
+     }
+    
+    .box_img {
+        width: 280px;
+        padding: 30px 15px 0 30px;
+    }
+
+    .box_content {
+        padding: 55px 20px 20px 20px;
+        font-size: 15px; 
+    }
+
+    .box_name {
+        font-size: 25px;
+        position: absolute;
+        top: -5px;
+        color: rgb(7, 215, 7);
+        text-shadow: 2px 1px rgb(152, 151, 151);
+
+    }
+
+ .price {
+    padding-top: 13px;
+    font-size: 25px;
+
+    top: 20px;
+    right: 10px;
+ }
+
+ .buy_btn {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translate(70%, 60%);
+    
+
+    border-radius: 25px;
+    padding: 5px 25px;
+    cursor: pointer;
+    }
+    
+ }
