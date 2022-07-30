@@ -1,0 +1,57 @@
+/* Main section 3 */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body{
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ .company_info {
+    width: 100%;
+    height: auto;
+
+    position: absolute;
+    top: 1450px;
+    
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    
+    
+    border: 1px solid transparent; 
+    background-color: white;
+    border-radius: 35px;
+    padding: 50px 40px;
+} 
+
+.about_us_info {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.about_us {
+    font-size: 35px;
+    color: rgb(17, 107, 17);
+    text-shadow:  3px 3px rgb(152, 151, 151);
+}
+
+.about_us_info p {
+    padding: 15px;
+}
+
+.about_img {
+    height:300px;
+    width: auto;
+    border-radius: 25px;
+    position: absolute;
+    top: 105px;
+    right: 80px; 
+}
+
