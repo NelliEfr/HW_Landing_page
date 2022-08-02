@@ -173,3 +173,65 @@ left: 20%;
 top: 80%;
 
 }
+
+.abaut_us{
+  display: flex;
+  
+  height: 564px;
+  width: 59%;
+  margin: 0 20% 5% 20%;
+}
+
+.our_clients{
+  background-color: aquamarine;
+  height: 630px;
+  width: 100%;
+}
+
+.reviews{
+  height: 900px;
+  width: 100%;
+}
+
+.contact_us{
+  height: 623px;
+  width: 100%;
+  background-image: url(../media/Rectangle\ .jpg);
+}
+
+footer{
+  display: flex;
+  align-items: center;
+ justify-content: space-around;
+  height: 110px;
+  width: 100%;
+
+}
+
+#abaut_us1{
+  
+  height: 564px;
+  width: 50%;
+}
+
+#abaut_us2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  
+  height: 564px;
+  width: 50%;
+}
+ .komp{
+  color: black;
+ }
+
+
+
+ .keiss{
+
+  width: 100%;
+  height: 100%;
+  background-color: antiquewhite;
+
+ }
