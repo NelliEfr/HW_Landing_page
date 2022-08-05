@@ -1,0 +1,166 @@
+/* Main-Block */
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body{
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+
+/* Section 4 */
+
+
+
+.contact {
+    position: absolute;
+    top: 1950px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+
+    margin: 50px;  
+}
+
+.call-info {
+    vertical-align: middle;
+    text-align: center; 
+
+    border: 1px solid transparent;
+    border-radius: 30px;
+    background-color: rgb(7, 215, 7);
+    
+    padding: 50px;
+    margin: 25px;
+}
+
+.section2_name {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.call-info p {
+    padding: 10px;
+
+}
+
+.form_sub {
+    vertical-align: middle;
+    text-align: center; 
+
+    border: 1px solid transparent;
+    border-radius: 30px;
+    background-color: rgb(7, 215, 7);
+    
+    padding: 50px;
+    margin: 25px;
+}
+
+section form input {
+    border: 2px solid transparent;
+    border-radius: 25px;
+    
+    padding: 10px 35px;
+    margin: 5px;
+}
+
+.submit_btn {
+    border: 1px solid transparent;
+    background-color: yellow;
+    border-radius: 30px;
+    
+    margin-top: 15px;
+    padding: 20px;
+    cursor: pointer;
+ }
+
+ .submit_btn:hover {
+    color: rgb(0, 90, 0);
+    font-weight: bold;
+ } 
+   
+
+
+
+
+/* Footer */
+
+.footer_card {
+    position: absolute;
+    top: 2450px;
+    background-color: rgb(7, 215, 7);
+    width: 100%;
+}
+
+footer i {
+    position: absolute;
+    top: 10px;
+    left: 19px;
+    font-size: 30px; 
+}
+
+.logo_footer {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    padding-left: 62px; 
+}
+
+
+
+
+@media screen and (max-width: 700px) {
+
+    .footer_card {
+    
+        top: 2950px;
+    }
+
+    .contact {
+        top: 2600px;
+        margin: 8px;
+    }
+
+    .call-info {
+        font-size: 14px;
+    }
+
+    .section2_name {
+        font-size: 15px;
+    }
+
+    .call-info p {
+        padding: 5px;
+    }
+
+    .form_sub {
+        border-radius: 30px;
+        padding: 25px;
+    }
+
+section form input {
+    border: 1px solid transparent;
+    border-radius: 15px;
+    padding: 8px;
+}
+
+.submit_btn {
+   
+    padding: 5px;
+    font-size: 14px;
+ }
+
+}
+
+
