@@ -11,55 +11,42 @@
     <title>WebDeveloper Portfolio</title>
 </head>
 <body>
-    <header class="header">
-        <div class="header_container">
-            <nav class="header_nav">
-                <a class="header_logo" href="#">
-                    <img src="image/logo.png.png" alt="logo">
-                </a>          
-                <ul class="header_menu">
-                    <li class="menu_item">
+    <header>
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <img src="image/logo.png.png" alt="logo">
+            </div>
+            <ul class="navbar_links">
+                <input type="checkbox" id="checkbox-toggle">
+                <label for="checkbox-toggle" class="hamburger">
+                    <span class="hamburger-line"></span>
+                </label>
+                <div class="nav_menu">
+                    <li>
                         <a href="#">Home</a>
                     </li>
-                    <li class="menu_item">
+                    <li>
                         <a href="#">About</a>
                     </li>
-                    <li class="menu_item">
-                        <a href="#">My Skills</a>
+                    <li>
+                        <a href="#">My skills</a>
                     </li>
-                    <li class="menu_item">
+                    <li>
                         <a href="#">Projects</a>
                     </li>
-                    <li class="menu_item">
-                        <a href="#">Contact</a>
+                    <li>
+                        <a href="#">Contacts</a>
                     </li>
-                </ul>
-                <div class="header_social">
-                    <a href="#">
-                        <i class="fa-brands fa-github social_item"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa-brands fa-linkedin social_item"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa-solid fa-phone social_item"></i>
-                    </a>
-                    <a class="nav_menu-bar" href="#">
-                        <i class="fa-brands fa-square-whatsapp social_item"></i>
-                    </a>
-                    <a href="">
-                        <i class="fa-solid fa-bars  nav_menu-button"></i>
-                    </a>
                 </div>
-            </nav>
-            <div class="header_title">
-                <h1>An essential aspect of creativity is not being afraid to fail.</h1>
-            </div>
-            <div class="header_background">
-                <img class="header_image" src="image/header_image.jpg.png" alt="image">
-            </div>
+            </ul>
+        </nav> 
+        <div class="header_img">
+            <img class="header_image" src="image/header_image.jpg.png" alt="image">
         </div>
-    </header>
+        <div class="header_title">
+            <h1>An essential aspect of creativity is not being afraid to fail.</h1>
+        </div>
+    </header>      
     <section class="skills">
         <div class="skills_title_box">
             <h1 class="skills_title">My Tech Stack</h1>

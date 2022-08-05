@@ -4,47 +4,92 @@
     box-sizing: border-box;
 }
 
-.header {
-    background-color: #17105F;   
-    position: relative;
-}
-
-.header_container {
-    position: relative;
-}
-
-.header_logo {
-    padding-top: 10px;
-    font-size: 50px;  
-}
-
-.header_nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100px;
-}
-
-.header_menu {
-    list-style: none;
-    display: flex;
-    font-size: 25px;
-    font-weight: 400;
-}
-
-.menu_item {
-    padding: 65px 30px; 
-}
-
-nav ul li a:hover {
-    color: white;
-    padding-bottom: 32px;
-    border-bottom: 3px solid white;
+body {
+    font-family: sans-serif;
+    min-width: 320px;
 }
 
 a {
     text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar-logo {
+    padding-top: 5px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #17105F;
+}
+
+.navbar_links a {
     color: #49C4F0;
+}
+
+.nav_menu {
+    display: flex;
+    font-size: 18px;
+    font-weight: 700;
+
+}
+
+.nav_menu li {
+    padding: 5px 15px;
+}
+
+.nav_menu li a:hover {
+    transition: all .5s;
+    color: white;
+}
+
+#checkbox-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.hamburger-line {
+    background-color: #005FA3;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+}
+
+.hamburger-line::before,
+.hamburger-line::after {
+    background-color: #005FA3;
+    content: '';
+    display: block;
+    position: absolute;
+    transition: all .3s;
+    width: 100%;
+    height: 100%;
+}
+
+.hamburger-line::before {
+    top: 7px;
+}
+
+.hamburger-line::after {
+    top: -7px;
+}
+
+.header_img {
+    background-color: #17105F;
+    width: 100%;
+    position: relative;
 }
 
 .header_image {
@@ -54,65 +99,44 @@ a {
 .header_title {
     position: absolute;
     top: 160px;
-    right:50px;
+    right: 50px;
     color: white;
-    font-size: 25px;
-    text-align: end;
-    max-width: 850px;
-    opacity: 0.3;
-}
-
-.social_item {
-    color: white;
-    margin-right: 7px;
-    font-size: 22px;
-    
-}
-
-.nav_menu-button {
-    width: 22px;
-    height: 22px;
-    font-size: 22px;
-    display: flex; /**центровка*/
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;/**при наведении появляется ручка*/
 }
 
 .skills {
-    background: #191063 ;
-    color:white;
+    background: #191063;
+    color: white;
     width: 100%;
     position: relative;
     padding-bottom: 62px;
 }
-  
+
 .skills_title_box {
     text-align: center;
     padding-top: 70px;
 }
-     
+
 .skills_title {
     font-size: 42px;
     font-weight: 600;
 }
-  
+
 .skills_text {
     padding: 20px 0 60px 0;
     font-size: 25px;
 }
-  
+
 .skills_subtitle {
     font-size: 25px;
     font-weight: 600;
     color: white;
     margin-top: 20px;
 }
-  
+
 .progressbar_box {
     padding: 0 100px 32px 100px;
 }
-  
+
 .progressbar {
     display: inline-block;
     width: 100%;
@@ -120,46 +144,46 @@ a {
     padding: 2px;
     border-radius: 10px;
     background-color: #555;
-    box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
     position: relative;
-} 
-  
+}
+
 .progressbar span {
     display: block;
     border-radius: 10px;
     height: 100%;
-    box-shadow: inset 0 2px 9px rgba(255,255,255,0.3),
-                inset 0 -2px 6px rgba(0, 0, 0,0.4); 
+    box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
+                inset 0 -2px 6px rgba(0, 0, 0, 0.4);
     overflow: hidden;
     position: relative;
-}  
-  
+}
+
 .blue span {
     background-color: rgb(13, 128, 222);
-    background-image: linear-gradient(center bottom,rgb(13, 128, 222) 37%,
-    rgb(13, 128, 222) 69%);
+    background-image: linear-gradient(center bottom, rgb(13, 128, 222) 37%,
+            rgb(13, 128, 222) 69%);
     width: 80%;
     position: relative;
-} 
-  
+}
+
 .pink span {
     background-color: #df2196;
-    background-image: linear-gradient(to bottom,#df2196,#d4076a);
+    background-image: linear-gradient(to bottom, #df2196, #d4076a);
     width: 65%;
 }
-  
+
 .orange span {
     background-color: #ef7008;
-    background-image: linear-gradient(to bottom,#ef7008,#e6430d);
+    background-image: linear-gradient(to bottom, #ef7008, #e6430d);
     width: 55%;
 }
-  
-.purple span{
+
+.purple span {
     background-color: #670ba0;
-    background-image: linear-gradient(to bottom,#670ba0,#491054);
+    background-image: linear-gradient(to bottom, #670ba0, #491054);
     width: 40%;
 }
-  
+
 .progressbar span:after {
     content: " ";
     position: absolute;
@@ -167,29 +191,30 @@ a {
     left: 0;
     bottom: 0;
     right: 0;
-    background-image: linear-gradient( -45deg,
-                                         rgba(255,255,255, .2) 25%,
-                                          transparent 25%,
-                                          transparent 50%,
-                                          rgba(255,255,255, .2) 50%,
-                                          rgba(255,255,255, .2) 75% ,
-                                          transparent 75%,
-                                          transparent);
+    background-image: linear-gradient(-45deg,
+            rgba(255, 255, 255, .2) 25%,
+            transparent 25%,
+            transparent 50%,
+            rgba(255, 255, 255, .2) 50%,
+            rgba(255, 255, 255, .2) 75%,
+            transparent 75%,
+            transparent);
     z-index: 1;
     background-size: 50px 50px;
     animation: move 2s linear infinite;
     overflow: hidden;
 }
-  
-  @keyframes move {
-      0% {
-          background-position: 0 0;
-      }
-      100% {
-          background-position: 50px 50px;
-      }
-   } 
-  
+
+@keyframes move {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 50px 50px;
+    }
+}
+
 .additional_skills {
     margin-top: 60px;
     text-align: center;
@@ -202,7 +227,7 @@ a {
 
 .skill_list {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 100px;
     padding: 0 122px;
     margin: 60px 0 0;
@@ -211,7 +236,7 @@ a {
     justify-content: space-evenly;
     list-style-type: none;
 }
- 
+
 .skill_list li {
     font-size: 24px;
 }
@@ -269,9 +294,10 @@ a {
     background-color: #13095e;
     padding-bottom: 52px;
 }
- .project_conteiner { 
+
+.project_conteiner {
     display: grid;
-    grid-template-columns: repeat(3,300px);
+    grid-template-columns: repeat(3, 300px);
     grid-auto-rows: 355px;
     gap: 70px;
     justify-content: center;
@@ -291,17 +317,17 @@ a {
     border-radius: 20px;
     position: relative;
     box-shadow: 5px 5px 10px white;
-} 
+}
 
 .project_img {
     width: 100%;
-    height:170px;
+    height: 170px;
     overflow: hidden;
     border-radius: 20px 20px 0 0;
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
-} 
+}
 
 .content {
     max-width: 270px;
@@ -312,18 +338,19 @@ a {
     bottom: 40px;
     left: 15px;
 }
+
 .project_title {
     color: gray;
     font-size: 22px;
-    margin-bottom: 10px;
+    margin-bottom: 3px;
     text-align: center;
 }
 
 .project_text {
     font-size: 14px;
     font-weight: 300;
-    text-align:justify;
-    margin-bottom: 10px;
+    text-align: justify;
+    margin-bottom:5px;
 }
 
 .project_stack {
@@ -334,17 +361,18 @@ a {
 .icon_git {
     position: absolute;
     bottom: -25px;
-    right:85px;
+    right: 85px;
 }
 
 .project_code {
     position: absolute;
     bottom: -25px;
-    right: 18px;
+    right: 13px;
     text-decoration: underline;
+    color: #005FA3;
 }
 
-.form{
+.form {
     background-color: #191063;
     max-width: 100%;
     position: relative;
@@ -354,34 +382,34 @@ a {
     align-items: center;
     padding: 42px 0;
 }
- 
+
 .form-wrapper {
     order: 2;
-}  
+}
 
 form {
     padding: 22px 60px;
     display: flex;
     flex-direction: column;
-    align-items: center;   
+    align-items: center;
     background-color: #49C4F0;
 }
- 
+
 .form_input {
     width: 100%;
     height: 46px;
     margin: 10px 0;
-    padding: 10px 12px ; 
+    padding: 10px 12px;
     border: none;
     background-color: white;
     font-size: 17px;
 }
- 
+
 .form_title {
     text-align: center;
     color: black;
     font-size: 50px;
-    font-weight:bold;
+    font-weight: bold;
 }
 
 .form_text {
@@ -389,8 +417,8 @@ form {
     text-align: center;
     margin: 20px 0;
     font-size: large;
-    line-height:20px;
-    font-weight: 300 ;
+    line-height: 20px;
+    font-weight: 300;
     border: none;
 }
 
@@ -400,24 +428,24 @@ button {
     padding: 12px 38px;
     margin-top: 7px;
     background-color: #49C4F0;
-    color:#082B76;
+    color: #082B76;
     font-size: larger;
     font-weight: bold;
 }
 
 button:hover {
-  outline: none;
-  background-color: white;
-} 
+    outline: none;
+    background-color: white;
+}
 
 .form_input:focus {
     outline: none;
     border-bottom: 4px solid #082B76;
- }
- 
+}
+
 .form_comments {
     width: 100%;
-    height:100px;
+    height: 100px;
     background-color: white;
     padding: 12px;
     margin: 10px 0;
@@ -433,7 +461,7 @@ button:hover {
 
 .grid_form_container {
     display: grid;
-     grid-template-columns: 200px 200px;
+    grid-template-columns: 200px 200px;
     grid-template-rows: 200px 200px;
     gap: 15px;
 }
@@ -457,107 +485,126 @@ button:hover {
 }
 
 @media screen and (max-width:980px) {
-    nav {
-        position: relative;
-        
-    }
-    .nav_menu-button{
-        display: flex;
-    }
-    .header_nav {
-        justify-content: space-between;
-        padding: 0 50px;
-    }
-    
-    .menu_item {
-        padding: 24px 10px; 
-        border-bottom: 2px solid black;
-   }
-    nav ul {
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        right:0px;
-        background-color: #17105F;
-        width: 120px;
-    }
-    nav ul li a:hover {
-        border-bottom: none;
-    }
-    .header_title  h1{
-        display: none;
-    }
     .project_conteiner {
-        grid-template-columns: repeat(2,300px);
+        grid-template-columns: repeat(2, 300px);
     }
+
     .grid_form_container {
         padding-bottom: 20px;
     }
 }
 
-@media screen and (max-width: 768px) {
-    .menu_item {
-        padding: 10px 6px; 
+@media screen and (max-width:768px) {
+    .header_title h1 {
+        display: none;
+    }
+
+    .navbar-logo {
+        padding-top: 10px;
+    }
+
+    .nav_menu {
+        display: none;
+        max-height: 0;
+        overflow: hidden;
+        position: absolute;
+        left: 0;
+        right: 0;
+        background-color: rgb(118, 137, 161);
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .nav_menu li a {
+        color: black;
+        display: block;
+        padding: 15px;
+    }
+
+    .nav_menu li:hover {
+        background-color: #005FA3;
+    }
+
+    #checkbox-toggle:checked~.nav_menu {
+        display: block;
+        max-height: 100%;
+        transition: all .5s;
+    }
+
+    .hamburger {
+        display: block;
+        padding: 20px 0;
+    }
+
+    #checkbox-toggle:checked~.hamburger .hamburger-line {
+        background-color: transparent;
+    }
+
+    #checkbox-toggle:checked~.hamburger .hamburger-line::before {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+
+    #checkbox-toggle:checked~.hamburger .hamburger-line::after {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    .header_img {
+        position: static;
     }
 }
 
-@media screen and (max-width: 480px) {
-    .header_title {
-        opacity: 0.6;
+@media screen  and (max-width: 620px){
+    .nav_menu li {
+        padding: 0px 19px;
+        transition: all 1s ;
     }
+    
+}
+
+@media screen and (max-width: 480px) {
+
     .header_title h1 {
         font-size: 36px;
     }
+
     .skills_title {
         font-size: 36px;
     }
+
     .skills_text {
         font-size: 20px;
     }
+
     .skill_list {
         gap: 80px;
     }
+
     .progressbar_box {
         padding: 0 30px;
     }
+
     .project_conteiner {
-        grid-template-columns: repeat(1,300px);
+        grid-template-columns: repeat(1, 300px);
     }
-    nav {
-        position: relative;
-    }
-    .nav_menu-button{
-        display: flex;
-    }
-    .header_nav {
-        justify-content: space-between;
-        padding: 0 50px;
-    }
-    .menu_item {
-        padding: 9px 6px; 
-        border-bottom: 2px solid black;
-   }
-    nav ul {
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        right:0px;
-        background-color: #17105F;
-        width: 120px;
-    }
+
     .grid_form_container {
         display: grid;
-         grid-template-columns: 190px 190px;
+        grid-template-columns: 190px 190px;
         grid-template-rows: 190px 190px;
         gap: 5px;
     }
+
     form {
         padding: 20px 45px;
     }
+
     .skill_list {
         grid-template-columns: 1fr;
     }
-   .skills_title-list {
-    font-size: 30px;
-   }
+
+    .skills_title-list {
+        font-size: 30px;
+    }
 }
